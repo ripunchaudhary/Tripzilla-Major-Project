@@ -1,0 +1,71 @@
+<%- layout("layouts/boilerplate") %>
+
+  <div class="row mt-3">
+    <div class="col-8 offset-2" >
+        <h2>Create a new listing.</h2>
+  <form method="post" action="/listings" novalidate class="needs-validation">
+    <div class="mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input
+        type="text"
+        name="listing[title]"
+        placeholder="Enter Title"
+        class="form-control"
+        required
+      />
+      <div class="valid-feedback">Looks Good!</div>
+    </div>
+    <div class="mb-3">
+      <label for="description" class="form-label">Description</label>
+      <textarea
+        name="listing[description]"
+        placeholder="Enter description"
+        class="form-control"
+        required
+      ></textarea>
+      <div class="valid-feedback">okay!</div>
+    </div>
+
+    <div class="mb-3">
+      <label for="image.url" class="form-label">Image</label>
+      <input
+        type="text"
+        name="listing[image.url]"
+        placeholder="Enter image url/link"
+        class="form-control"
+      />
+    </div>
+
+    <div class="row">
+        <div class="mb-3 col-md-4">
+      <label for="price" class="form-label">Price</label>
+      <input name="listing[price]" placeholder="6500" class="form-control" required/>
+      <div class="invalid-feedback">Enter a valid price</div>
+    </div>
+
+    <div class="mb-3 col-md-8">
+      <label for="country" class="form-label">Country</label>
+      <input type="text" name="listing[country]" placeholder="Enter country" class="form-control" required/>
+      <div class="invalid-feedback">Add Country name</div>
+    </div>
+
+    <div class="mb-3">
+      <label for="location" class="form-label">Location</label>
+      <input
+        type="text"
+        name="listing[location]"
+        placeholder="Enter location"
+        class="form-control"
+        required
+      />
+      <div class="invalid-feedback">Add Location</div>
+    </div>
+    <br>
+    <button class="btn btn-dark post-btn mt-3">Create</button>
+    <br><br>
+  </form>
+  
+  </div>
+  <br>
+  </div>
+

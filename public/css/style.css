@@ -1,0 +1,117 @@
+/* *{
+    background-color:pink;
+} */
+
+
+/* .plus-jakarta-sans-<uniquifier> {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+}
+
+.container{
+    flex:1;
+}
+
+.navbar{
+    height:5rem;
+    background-color:white;
+}
+
+.fa-route{
+    color:#cd5554;
+    font-size:2rem;
+}
+
+.nav-link{
+    color:#222222 !important;
+}
+
+.f-info-links a{
+    text-decoration:none;
+    color:#222222;
+    flex-wrap:wrap;
+}
+
+.f-info-links a:hover{
+    text-decoration:underline;
+}
+
+.f-info-links, .f-info-socials{
+    width:100%;
+    font-size:1.3rem;
+}
+
+.f-info-socials .i {
+    /* margin-right:1.6rem; */
+    margin-right:1.5rem;
+}
+
+
+.f-info {
+    text-align:center;
+    display:flex;
+    height:8rem;
+    background:#ebebeb;
+    flex-wrap:wrap;
+    justify-content:center;
+    /* align-items:space-evenly; */
+    align-items:center;
+}
+
+/* //cards */
+.card .div {
+    border:none !important;
+    margin-bottom:2rem;
+}
+
+.card-img-top{
+    border-radius:1rem !important;
+    width:100% !important;
+    object-fit:cover !important;
+}
+
+.card-body{
+   padding: 0 !important;
+}
+
+.card-text p{
+    font-weight:400;
+}
+
+/* card effect */
+
+.card-img-overlay{
+    opacity:0 ;
+}
+
+.card-img-overlay:hover{
+    opacity:0.2 ;
+    background-color:white;
+}
+
+.post-btn{
+    background-color:#cd5554;
+    border:none;
+}
+
+.show-img{
+    height:40vh;
+}
+
+.btns{
+    display:flex;
+}
+
+.show-card{
+    padding-left:0;
+    padding-right:0;
+}
